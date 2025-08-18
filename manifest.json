@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts Blocker",
+  "version": "1.0",
+  "description": "Blocks YouTube Shorts by redirecting and hiding UI elements",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube Shorts Blocker",
+    "default_icon": {
+      "16": "icon-active.png",
+      "32": "icon-active.png",
+      "48": "icon-active.png",
+      "128": "icon-active.png"
+    }
+  },
+  "icons": {
+    "16": "icon-active.png",
+    "32": "icon-active.png",
+    "48": "icon-active.png",
+    "128": "icon-active.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
