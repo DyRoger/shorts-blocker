@@ -2,8 +2,13 @@
   "manifest_version": 3,
   "name": "YouTube Shorts Blocker",
   "version": "1.0",
-  "description": "Blocks YouTube Shorts by redirecting and hiding UI elements",
+  "description": "Blocks YouTube Shorts by redirecting Shorts URLs, hiding Shorts UI elements, and counting blocked Shorts.",
+  "author": "DyRoger",
+  "homepage_url": "https://github.com/DyRoger/shorts-blocker",
   "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "YouTube Shorts Blocker",

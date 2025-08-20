@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Privacy Policy — YouTube Shorts Blocker</title>
+  </head>
+  <body>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: 2025-08-21</p>
+
+    <p>This privacy policy describes how the YouTube Shorts Blocker extension ("the Extension") handles data.</p>
+
+    <h2>Data collection</h2>
+    <p>The Extension runs locally in your browser and does not transmit any browsing data to external servers. It uses the following browser APIs:</p>
+    <ul>
+      <li><strong>storage</strong> — to save local settings and the counter that tracks how many unique Shorts videos were blocked.</li>
+      <li><strong>tabs</strong> — to detect and refresh YouTube tabs when the user toggles the blocker.</li>
+      <li>Content script access to <code>https://www.youtube.com/*</code> pages to detect and hide Shorts UI elements and to intercept Shorts URLs for local redirecting.</li>
+    </ul>
+
+    <h2>How data is used</h2>
+    <p>All processing happens locally in the browser. The counter stored via the storage API contains only YouTube video IDs (used to deduplicate counts) and no user-identifying data. No analytics, crash reports, or remote logging is performed.</p>
+
+    <h2>Remote code</h2>
+    <p>The Extension does not download or execute remote code at runtime. All code is packaged inside the extension bundle.</p>
+
+    <h2>Third-party services</h2>
+    <p>None.</p>
+
+    <h2>User control</h2>
+    <p>You can disable or remove the Extension at any time. You may clear the stored counter and settings from the browser's extension storage or by removing the extension.</p>
+
+    <h2>Contact</h2>
+    <p>For questions, open an issue on the project's GitHub: https://github.com/DyRoger/shorts-blocker</p>
+  </body>
+</html>
